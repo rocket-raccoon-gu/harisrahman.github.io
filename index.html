@@ -4,26 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Flutter Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm [Your Name] 👋</h1>
-        <p>Flutter Developer | Mobile App Designer</p>
-    </header>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description here.</p>
-            <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>Flutter Developer | Mobile App Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Profile Picture">
+                <div>
+                    <h3>I build cross-platform apps with Flutter</h3>
+                    <p>With 2+ years of experience, I specialize in:</p>
+                    <ul>
+                        <li>📱 Flutter (Android & iOS)</li>
+                        <li>🔥 Firebase Integration</li>
+                        <li>🔄 State Management (Provider, Bloc)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>E-Commerce App</h3>
+                    <p>A Flutter app with Firebase backend.</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather updates using API.</p>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <a href="https://github.com/username">GitHub</a> |
-        <a href="https://linkedin.com/in/username">LinkedIn</a> |
-        <a href="mailto:your@email.com">Email</a>
+        <p>© 2024 Your Name. Built with ❤️ and HTML/CSS/JS.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
