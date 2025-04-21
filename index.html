@@ -3,44 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Flutter Developer</title>
+    <title>Muhammad Haris Rahman | Flutter Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Haris Rahman</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p>Flutter Developer | Mobile App Designer</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <div class="hero-content">
+                <h1>Muhammad Haris Rahman</h1>
+                <h2>Senior Flutter Developer</h2>
+                <p>Building high-performance mobile applications for Android & iOS</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="images/profile.jpg" alt="Profile Picture">
-                <div>
-                    <h3>I build cross-platform apps with Flutter</h3>
-                    <p>With 2+ years of experience, I specialize in:</p>
-                    <ul>
-                        <li>📱 Flutter (Android & iOS)</li>
-                        <li>🔥 Firebase Integration</li>
-                        <li>🔄 State Management (Provider, Bloc)</li>
-                    </ul>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Muhammad Haris Rahman">
+                </div>
+                <div class="about-content">
+                    <h3>Dedicated Flutter Developer with 5+ Years Experience</h3>
+                    <p>Skilled in creating dynamic, high-performance mobile applications using Flutter and Dart. Proven track record of delivering robust apps for e-commerce, logistics, and marketing sectors.</p>
+                    
+                    <div class="skills">
+                        <h4>Technical Skills:</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Flutter & Dart</li>
+                            <li><i class="fas fa-check"></i> Android & iOS Development</li>
+                            <li><i class="fas fa-check"></i> Firebase Integration</li>
+                            <li><i class="fas fa-check"></i> REST APIs</li>
+                            <li><i class="fas fa-check"></i> State Management (Provider, Bloc)</li>
+                            <li><i class="fas fa-check"></i> Git Version Control</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="education">
+                        <h4>Education:</h4>
+                        <div class="education-item">
+                            <h5>Master of Vocational in Mobile Application Development</h5>
+                            <p>Cochin University of Science and Technology | 2018-2020</p>
+                        </div>
+                        <div class="education-item">
+                            <h5>Bachelor of Vocational in Computer Science</h5>
+                            <p>Farook College, Calicut University | 2015-2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Flutter Developer</h3>
+                        <h4>Ansar Gallery, Doha</h4>
+                        <p>Developing and maintaining Picker and Driver mobile applications for logistics operations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2022 - Feb 2023</div>
+                    <div class="timeline-content">
+                        <h3>Flutter Developer</h3>
+                        <h4>Geojit Technologies Pvt Ltd, Kochi</h4>
+                        <p>Worked on Flip Marketing Application for financial services.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2021 - Dec 2021</div>
+                    <div class="timeline-content">
+                        <h3>Flutter Developer</h3>
+                        <h4>Cybaze Technologies Pvt Ltd, Calicut</h4>
+                        <p>Developed e-commerce applications including Inthezar, Jinn, and GoodBuy Seller.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2019 - Jun 2020</div>
+                    <div class="timeline-content">
+                        <h3>Junior Android Developer</h3>
+                        <h4>Alcodex Technologies Pvt Ltd, Kochi</h4>
+                        <p>Worked on AIRU and Postbox mobile applications.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,26 +121,42 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <h3>E-Commerce App</h3>
-                    <p>A Flutter app with Firebase backend.</p>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <img src="images/picker-driver.jpg" alt="Picker & Driver App">
+                    <div class="project-info">
+                        <h3>Picker & Driver App</h3>
+                        <p>Logistics management application for Ansar Gallery with real-time tracking.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Google Maps API</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>Weather App</h3>
-                    <p>Real-time weather updates using API.</p>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <img src="images/goodbuy-seller.jpg" alt="GoodBuy Seller">
+                    <div class="project-info">
+                        <h3>GoodBuy Seller</h3>
+                        <p>E-commerce platform for sellers to manage inventory and orders.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Provider</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/flip-marketing.jpg" alt="Flip Marketing App">
+                    <div class="project-info">
+                        <h3>Flip Marketing App</h3>
+                        <p>Financial marketing application developed for Geojit Technologies.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>REST API</span>
+                            <span>Bloc</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,19 +164,42 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-dark">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-links">
-                <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://github.com/yourusername"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> harisrahmankhta@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +974 5013 4119</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2024 Your Name. Built with ❤️ and HTML/CSS/JS.</p>
+        <div class="container">
+            <p>&copy; 2023 Muhammad Haris Rahman. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
